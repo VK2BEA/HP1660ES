@@ -49,7 +49,7 @@
 
 void
 usage( char* progName ) {
-    fprintf( stderr, "Usage: %s -a IP_ADDRESS -f IA_FILE [-r] [-d \"Description\"] IA_FILE.R\n"
+    fprintf( stderr, "Usage: %s -a IP_ADDRESS -n IA_FILE [-f] [-d \"Description\"] IA_FILE.R\n"
     "       -a | --address       IP address of HP logic analyzer\n"
     "       -n | --name          File name on logic analyzer\n"
     "       -d | --description   Descriptive string for the inverse assembler\n"
