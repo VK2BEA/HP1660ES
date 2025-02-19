@@ -59,3 +59,12 @@ See P542 of HP 1660E/ES/EP and 1670E Series Logic Analyzer User's Guide (Publica
 Compile with: `$ gcc -o IAdown IAdown.c`
 
 Example execution:  `$ IAdown -a 192.168.1.16 -n I68010 -d \"MC68010 Inverse Assembler\" i68010.r`
+
+```
+Usage: ./IAdown -a IP_ADDRESS -n IA_FILE [-f] [-d "Description"] IA_FILE.R
+       -a | --address       IP address of HP logic analyzer
+       -n | --name          File name on logic analyzer
+       -d | --description   Descriptive string for the inverse assembler
+       -f | --floppy        Create the file on the floppy drive
+            --verbose       Show debugging information
+```
