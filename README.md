@@ -21,9 +21,11 @@ Edit the file `~/.config/dosbox/dosbox-staging.conf`. Add the startup commands t
 
 ```
 [autoexec]
-# Lines in this section will be run at startup.
-mount c "~/10391B Inverse Assembler Development Package_v2.0/IA_Development_Disk/"
-c:
+# Each line in this section is executed at startup as a DOS command.
+mount c "~/10391B Inverse Assembler Development Package_v2.0"
+SET HPTABLES=C:\IA_DEV~1\TABLES
+PATH=%PATH%;C:\IA_DEV~1
+C:
 ```
 
 *Note that the file in the `TABLES` directory (created when unzipping the HP 10391B package) must be renamed from `AIAL.TXT` to `AIAL`*
